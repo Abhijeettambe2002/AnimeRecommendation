@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function displayResults(result, category) {
         resultsContainer.innerHTML = '';
-        console.log(result); // Debugging: Log the result to check the response structure
+        console.log(result); 
 
         if (result[category]) {
             result[category].forEach(anime => {
