@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url("/static/images/bg11.jpg"); /* Replace with an actual anime background image URL */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.watchlist {
+    padding: 20px;
+}
+
+.main_page-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #FF6600;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.main_page-button:hover {
+    background-color: #FFA07A;
+}
+
+/* Grid layout for anime results */
+.anime-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Ensure 4 items per row */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Anime item styling */
+.anime-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+    overflow: hidden; /* Ensure content does not overflow */
+}
+
+/* Ensure images fit within the anime item */
+.anime-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Delete button styling */
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-icon {
+    font-size: 24px;
+    color: #FF6600;
+}
+
+.delete-button:hover .delete-icon {
+    color: #FFA07A;
+}

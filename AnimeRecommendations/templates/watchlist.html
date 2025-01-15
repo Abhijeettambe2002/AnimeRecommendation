@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Watchlist</title>
+    <link rel="stylesheet" href="{% static 'css/watch_list.css' %}">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <h1>My Watchlist</h1>
+    <div class="watchlist">
+        <a href="{% url 'main_page' %}" class="main_page-button">Get Back</a>
+
+        <div class="anime-grid">
+            {% for item in watchlist %}
+                <div class="watchlist-item anime-item">
+                    <img src="{{ item.image_url }}" alt="{{ item.title }}">
+                    <div>
+                        <h3>{{ item.title }}</h3>
+                        <p>Episodes: {{ item.episodes }}</p>
+                        <p>Score: {{ item.score }}</p>
+                        <p>Duration: {{ item.duration }}</p>
+                    </div>
+                    <form method="post" action="{% url 'delete_from_watchlist' item.id %}">
+                        {% csrf_token %}
+                        <button type="submit" class="delete-button">
+                            <i class="fas fa-trash-alt delete-icon"></i>
+                        </button>
+                    </form>
+                </div>
+            {% empty %}
+                <p>No items in your watchlist.</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

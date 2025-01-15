@@ -1,0 +1,135 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-image: url("/static/images/bg11.jpg"); /* Replace with an actual anime background image URL */
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    display: flex;
+    justify-content: center;
+
+
+}
+    
+.welcome{
+    position: relative;
+    left: 100px;
+}
+nav a{
+    align-content: center;
+    position: relative;
+    left: 400px;
+    padding: 10px;
+}
+form {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+}
+
+form label {
+    display: flex;
+    color: #333;
+    align-items: center;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button {
+    background-color: #FF6600 ;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2em;
+    width: 200px;
+}
+
+form button:hover {
+    background-color: #FFA07A;
+}
+
+
+#watchlistForm  {
+    position:fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.0);
+
+
+}
+#watchlistForm button  {
+    border-radius: 30px;
+    font-size: 1em;
+    width: 170px;
+}
+.anime-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.anime-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+}
+
+.delete-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.delete-icon {
+    font-size: 24px;
+    color: #FF6600;
+}
+
+.delete-button:hover .delete-icon {
+    color: #FFA07A;
+}
+.watchlist-button:hover {
+    background-color: #ff80ab;
+}
+
+.messages {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ff4081;
+    color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.message {
+    margin: 0;
+    font-size: 1.2em;
+}
+#loading {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    color: #ff4081;
+}
