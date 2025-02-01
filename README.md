@@ -10,7 +10,6 @@ AnimeRecommendations is a web application that allows users to search for anime,
 - [Technical Details](#technical-details)
 - [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
