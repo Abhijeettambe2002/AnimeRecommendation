@@ -52,7 +52,7 @@ Once the server is running, you can use the application to:
 - **Search Anime:** Search anime by year and season  to find anime.
 - **View Details:** Views anime  detailes information including title, score, duration, and episodes.
 - **Add to Watchlist:** Add anime to your personal watchlist for future reference.
-- **Delete Anime :**Delete anime from your watchlist.
+- **Delete Anime** :**Delete anime from your watchlist.
 
 ## Features
 
