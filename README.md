@@ -49,14 +49,15 @@ To get a local copy up and running, follow these steps:
 
 Once the server is running, you can use the application to:
 
-- **Search Anime:** Use the search bar to find anime by title.
-- **View Details:** Click on an anime to view detailed information including title, score, duration, and episodes.
+- **Search Anime:** Search anime by year and season  to find anime.
+- **View Details:** Views anime  detailes information including title, score, duration, and episodes.
 - **Add to Watchlist:** Add anime to your personal watchlist for future reference.
+- **Delete Anime :**Delete anime from your watchlist.
 
 ## Features
 
 - **User Authentication:** Users can register, log in, and manage their accounts.
-- **Anime Search:** Search for anime using the search bar.
+- **Anime Search:** Search for anime  by year and season.
 - **Anime Details:** View detailed information about each anime.
 - **Watchlist Management:** Add and remove anime from your watchlist.
 
@@ -125,7 +126,3 @@ Contributions are what make the open-source community such an amazing place to l
     ```
 
 5. **Open a pull request.**
-
-## License
-
-Distributed under the MIT License. See `LICENSE` for more information.
