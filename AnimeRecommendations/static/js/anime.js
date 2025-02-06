@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         };
 
-        // Show loading screen
         loading.style.display = 'block';
         resultsContainer.innerHTML = '';
 
@@ -35,7 +34,6 @@ document.addEventListener("DOMContentLoaded", function() {
         } catch (error) {
             console.error(error);
         } finally {
-            // Hide loading screen
             loading.style.display = 'none';
         }
     });
@@ -92,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 resultsContainer.appendChild(animeItem);
             });
         } else {
-            console.log(`No data found for category: ${category}`); // Debugging: Log if no data found for category
+            console.log(`No data found for category: ${category}`); 
         }
     }
 
@@ -117,18 +115,15 @@ document.addEventListener("DOMContentLoaded", function() {
         durationsInput.value = selectedDurations.join(',');
         imagesInput.value = selectedImages.join(',');
 
-        // Change the text of the checkboxes to "Added"
         checkboxes.forEach(checkbox => {
             const label = checkbox.nextElementSibling;
             label.textContent = ' Added';
         });
 
-        // Show a message to the user after adding items to the watchlist
         const message = document.createElement('p');
         message.textContent = 'Added to watchlist! Search for more?';
         resultsContainer.appendChild(message);
 
-        // Submit the form
         watchlistForm.submit();
     });
 });
